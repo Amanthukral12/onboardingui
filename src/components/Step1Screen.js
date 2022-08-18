@@ -6,7 +6,18 @@ const Step1Screen = () => {
         title='Welcome! First things first'
         description='You can always change them later'
     >
-        Screen1
+        <form>
+            <label>Full Name</label>
+            <input
+             type="text"
+             placeholder='Steve Jobs'
+            />
+            <label>Display Name</label>
+            <input
+             type="text"
+             placeholder='Steve'
+            />
+        </form>
     </Base>
   )
 }
