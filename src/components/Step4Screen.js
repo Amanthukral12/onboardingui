@@ -2,12 +2,16 @@ import React from 'react'
 import Base from './Base'
 const Step4Screen = () => {
   return (
-    <Base 
-    title="Congratulations, Eren!"
-    description="You have completed onboarding, you can start using Eden!"
->
-    Screen4
-</Base>
+    <div>
+        <p>Tick Icon</p>
+        <Base 
+            title="Congratulations, Eren!"
+            description="You have completed onboarding, you can start using Eden!"
+        >
+            
+        </Base>
+    </div>
+    
   )
 }
 
