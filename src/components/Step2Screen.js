@@ -7,7 +7,19 @@ const Step2Screen = () => {
         title="Let's setup a home for all your work"
         description='You can always another workspace later'
     >
-        Screen2
+        <form>
+            <label>Workspace Name</label>
+            <input
+             type="text"
+             placeholder='Eden'
+            />
+            <label>Workplace URL <span>(optional)</span></label>
+            <span>www.eden.com/</span>
+            <input
+             type="text"
+             placeholder='Example'
+            />
+        </form>
     </Base>
   )
 }
