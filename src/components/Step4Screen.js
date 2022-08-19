@@ -2,7 +2,6 @@ import React from "react";
 import "./styles/Base.css";
 import check from "../assets/check.svg";
 const Step4Screen = ({ formData, setFormData }) => {
-  console.log(formData);
   return (
     <div>
       <img src={check} alt="check icon" className="icon" />
