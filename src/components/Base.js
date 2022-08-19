@@ -1,19 +1,15 @@
-import React from 'react'
-
-const Base = ({
-    title="Title",
-    description="Description",
-    children
-}) => {
+import React from "react";
+import "./styles/Base.css";
+const Base = ({ title = "Title", description = "Description", children }) => {
   return (
-    <div>
-        <div>
-            <h1>{title}</h1>
-            <h4>{description}</h4>
-        </div>
-        <div>{children}</div>
+    <div className="baseMain">
+      <div>
+        <p className="title">{title}</p>
+        <p className="description">{description}</p>
+      </div>
+      <div>{children}</div>
     </div>
-  )
-}
+  );
+};
 
-export default Base
+export default Base;
