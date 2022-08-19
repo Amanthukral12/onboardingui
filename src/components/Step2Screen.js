@@ -1,14 +1,14 @@
 import React from "react";
 import Base from "./Base";
-
+import "./styles/Step1Screen.css";
 const Step2Screen = ({ formData, setFormData }) => {
   return (
     <Base
       title="Let's setup a home for all your work"
       description="You can always another workspace later"
     >
-      <form>
-        <label>Workspace Name</label>
+      <form className="form">
+        <label className="textLabel">Workspace Name</label>
         <input
           type="text"
           placeholder="Eden"
@@ -16,19 +16,25 @@ const Step2Screen = ({ formData, setFormData }) => {
           onChange={(e) =>
             setFormData({ ...formData, workspaceName: e.target.value })
           }
+          className="inputBox"
+          required
         />
-        <label>
-          Workplace URL <span>(optional)</span>
+        <label className="textLabel">
+          Workplace URL <span className="optional">(optional)</span>
         </label>
-        <span>www.eden.com/</span>
-        <input
-          type="text"
-          placeholder="Example"
-          value={formData.workspaceURL}
-          onChange={(e) =>
-            setFormData({ ...formData, workspaceURL: e.target.value })
-          }
-        />
+        <div className="webUrl">
+          <span className="initialUrl">www.eden.com/</span>
+          <input
+            type="text"
+            placeholder="Example"
+            value={formData.workspaceURL}
+            onChange={(e) =>
+              setFormData({ ...formData, workspaceURL: e.target.value })
+            }
+            className="example"
+            required
+          />
+        </div>
       </form>
     </Base>
   );
