@@ -1,0 +1,155 @@
+.form {
+    width: 70%;
+    margin-left: auto;
+   margin-right: auto;
+}
+.textLabel {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.inputBox {
+    width: 80%;
+    line-height: 2.5em;
+    padding: 7px;
+    padding-left: 15px;
+    font-size: 0.75em;
+    border-radius: 5px;
+    border: 1px solid rgba(125, 124, 124, 0.53);
+    margin-bottom: 15px;
+}
+
+.inputBox:focus{
+    outline:none;
+}
+
+::placeholder { 
+    color: rgba(125, 124, 124, 0.53);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { 
+    color: rgba(125, 124, 124, 0.53);
+  }
+  
+  ::-ms-input-placeholder { 
+    color: rgba(125, 124, 124, 0.53);
+  }
+
+  .optional {
+    color: rgba(110, 110, 110, 0.53);
+  }
+
+  .initialUrl {
+    line-height: 1.5em;
+    font-size: 0.7em;
+    font-weight: 500;
+    color: rgba(110, 110, 110, 0.53);
+    background-color: #F8F9FC;
+    padding: 10px;
+    margin-right: auto;
+    position: relative;
+    left: 0;
+    border-right: 1px solid rgba(125, 124, 124, 0.53);
+    border-radius: 5px;
+  }
+
+  .webUrl {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 1px solid rgba(125, 124, 124, 0.53);
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+ 
+
+  .example {
+    width: 70%;
+   border: none;
+   border-radius: 5px;
+   padding-left: 10px;
+  }
+
+  .example:focus {
+    outline: none;
+  }
+
+  .teamSection {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:space-evenly;
+  }
+
+  .team {
+    width: 35%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+
+  .team:focus {
+    border: 1px solid #664DE5;
+  }
+
+  .teamDescription {
+    font-size: .75em;
+    width: 80%;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .teamHeading {
+    font-size: 0.75em;
+    margin-left: 20px;
+  }
+
+  .teamIcon {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 1200px ) {
+    .form {
+        width: 90%;
+    }
+    .teamSection {
+        width: 90%;
+    }
+    .team {
+        width: 50%;
+    }
+    
+  }
+
+  @media (max-width: 700px ) {
+    .form {
+        width: 100%;
+    }
+    .teamSection {
+        width: 100%;
+    }
+    .team {
+        width: 50%;
+    }
+    .teamDescription {
+        margin-left: 0;
+    }
+    .teamHeading {
+        margin-left: 0;
+        margin-bottom: 10 px;
+    }
+  }

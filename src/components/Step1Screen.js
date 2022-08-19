@@ -1,13 +1,14 @@
 import React from "react";
 import Base from "./Base";
+import "./styles/Step1Screen.css";
 const Step1Screen = ({ formData, setFormData }) => {
   return (
     <Base
-      title="Welcome! First things first"
-      description="You can always change them later"
+      title="Welcome! First things first..."
+      description="You can always change them later."
     >
-      <form>
-        <label>Full Name</label>
+      <form className="form">
+        <label className="textLabel">Full Name</label>
         <input
           type="text"
           placeholder="Steve Jobs"
@@ -15,8 +16,10 @@ const Step1Screen = ({ formData, setFormData }) => {
           onChange={(e) =>
             setFormData({ ...formData, fullName: e.target.value })
           }
+          className="inputBox"
+          required="required"
         />
-        <label>Display Name</label>
+        <label className="textLabel">Display Name</label>
         <input
           type="text"
           placeholder="Steve"
@@ -24,6 +27,8 @@ const Step1Screen = ({ formData, setFormData }) => {
           onChange={(e) =>
             setFormData({ ...formData, displayName: e.target.value })
           }
+          className="inputBox"
+          required="required"
         />
       </form>
     </Base>
