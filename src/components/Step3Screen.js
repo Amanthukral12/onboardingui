@@ -1,27 +1,38 @@
 import React from "react";
 import Base from "./Base";
+import myself from "../assets/myself-fill.svg";
+import team from "../assets/team-fill.svg";
+import "./styles/Step1Screen.css";
 const Step3Screen = ({ formData, setFormData }) => {
   return (
     <Base
       title="How are you planning to use Eden?"
       description="We'll streamline your setup experience accordingly."
     >
-      <div>
+      <div className="teamSection">
         <div
+          tabIndex="1"
+          className="team"
           value={formData.teamSize}
           onClick={(e) => setFormData({ ...formData, teamSize: "myself" })}
         >
-          <p>Icon1</p>
-          <h4>For myself</h4>
-          <p>Write better. Think more clearly. Stay organized.</p>
+          <img src={myself} alt="myself" className="teamIcon" />
+          <h4 className="teamHeading">For myself</h4>
+          <p className="teamDescription">
+            Write better. Think more clearly. Stay organized.
+          </p>
         </div>
         <div
+          tabIndex="1"
+          className="team"
           value={formData.teamSize}
           onClick={(e) => setFormData({ ...formData, teamSize: "team" })}
         >
-          <p>Icon2</p>
-          <h4>With my team</h4>
-          <p>Wikis, docs, tasks & projects, all in one place.</p>
+          <img src={team} alt="team" className="teamIcon" />
+          <h4 className="teamHeading">With my team</h4>
+          <p className="teamDescription">
+            Wikis, docs, tasks & projects, all in one place.
+          </p>
         </div>
       </div>
     </Base>
